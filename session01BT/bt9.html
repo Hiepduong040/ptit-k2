@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let users = [
+        { id: 1, name: "Alice", hobbies: ["Reading", "Drawing"] },
+        { id: 2, name: "Bob", hobbies: ["Gaming", "Cooking", "Reading"] },
+      ];
+
+      function hobbies() {
+        let hobbies = [];
+        users.forEach((item, index, arr) => {
+          hobbies.push(...item.hobbies);
+        });
+        let hobbie = [...new Set(hobbies)];
+        return hobbie;
+      }
+      console.log(hobbies(users));
+    </script>
+  </body>
+</html>

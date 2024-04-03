@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr1 = [1, 2, "a", 6, 7];
+      let arr2 = ["b", "hai"];
+      let indexNumber = 2;
+
+      function insertElements(arr, index, elements) {
+        arr.splice(index, 0, ...elements);
+        return arr;
+      }
+
+      console.log(insertElements(arr1, indexNumber, arr2));
+    </script>
+  </body>
+</html>

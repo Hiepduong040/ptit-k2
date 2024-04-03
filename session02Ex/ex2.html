@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function hasUppercase(text) {
+        const regexp = /^[A-Z]/;
+        const characters = text.split("");
+        const result = characters.some((item) => {
+          return regexp.test(item);
+        });
+        console.log(result);
+      }
+
+      hasUppercase("Hello");
+    </script>
+  </body>
+</html>

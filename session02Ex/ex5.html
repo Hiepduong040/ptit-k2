@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const employees = [
+        {
+          name: "Nguyễn Văn A",
+          age: 21,
+        },
+        {
+          name: "Nguyễn Văn B",
+          age: 30,
+        },
+        {
+          name: "Nguyễn Văn C",
+          age: 19,
+        },
+      ];
+      function sortEmployee1(employees) {
+        let resultIncrease = employees.slice().sort((a, b) => {
+          return a.age - b.age;
+        });
+        console.log(resultIncrease);
+      }
+      sortEmployee1(employees);
+      function sortEmployee2(employees) {
+        let resultDecrease = employees.slice().sort((a, b) => {
+          return b.age - a.age;
+        });
+        console.log(resultDecrease);
+      }
+      sortEmployee2(employees);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [2, 4, 6, 8, 10];
+      let number = 2;
+      function allNumbersDivisibleBy(arr, number) {
+        let result = arr.every((item) => {
+          return item % number == 0;
+        });
+        console.log(result);
+      }
+      allNumbersDivisibleBy(arr, number);
+    </script>
+  </body>
+</html>

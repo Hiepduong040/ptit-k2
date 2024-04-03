@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let idSearch = prompt("Nhập id sách cần tìm");
+      let book = [
+        {
+          id: 1,
+          name: "Lược sử về loài người",
+        },
+        {
+          id: 2,
+          name: "Tâm lý học tội phạm",
+        },
+        {
+          id: 3,
+          name: "Đạo đức ",
+        },
+        {
+          id: 4,
+          name: "Binh pháp tôn tử ",
+        },
+      ];
+      let result = book.find((item, index, arr) => {
+        return item.id == idSearch;
+      });
+      if (result) {
+        console.log("Sản phẩm cần tìm là", result);
+      } else {
+        console.log("Sách không tồn tại!!!");
+      }
+    </script>
+  </body>
+</html>

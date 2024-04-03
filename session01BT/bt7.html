@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [1, 3, 5, 7, 9, 10];
+      let number = +prompt("Nhập vào 1 số nguyên");
+      function searchNumber() {
+        let result = array.filter((item, index, arr) => {
+          return item <= number;
+        });
+        console.log(Math.max(...result));
+      }
+      searchNumber(array, number);
+    </script>
+  </body>
+</html>

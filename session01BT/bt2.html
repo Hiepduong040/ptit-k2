@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let classRoom = [
+        {
+          id: 1,
+          number: 25,
+        },
+
+        {
+          id: 2,
+          number: 30,
+        },
+
+        {
+          id: 3,
+          number: 50,
+        },
+      ];
+
+      let result = classRoom.map((item, index, arr) => {
+        if (item.number < 30) {
+          item.number = item.number + 10;
+        } else if (item.number > 40) {
+          item.number = item.number - 10;
+        } else {
+          item.number = item.number;
+        }
+        return {
+          id: item.id,
+          number: item.number,
+        };
+        //   item[index] = item.number + 10;
+      });
+      console.log("1111111", result);
+    </script>
+  </body>
+</html>
