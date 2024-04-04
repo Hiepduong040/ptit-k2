@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        ĐacBiet quan trọng
+        vì trong React JS dùng nhiều     
+        1.dùng với array
+        2.dùng với object
+
+    
+    
+    -->
+    <script>
+      let students = ["minh thu ", "lan anh", "bich ngoc", "kim ngoc"];
+      let [std1, std2, std3, std4] = students;
+      console.log("std1", std1);
+      console.log("std2", std2);
+      console.log("std3", std3);
+      console.log("std4", std4);
+
+      let obj = {
+        name: "Hoa",
+        id: 111,
+        address: "hà nội",
+        age: 20,
+      };
+
+      let { id, name, address } = obj;
+
+      console.log("name", name);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      for (let i = 0; i < 6; i++) {
+        console.log(i);
+      }
+      console.log(i);
+      /*
+            khi log i ngoài vòng lặp thì sẽ bị lỗi vì phạm vi hoạt động của let là 
+            block-scope, ở ví dụ trên i khi được khai báo = let sẽ chỉ tồn tại ở 
+            vòng lặp for, vậy nên lỗi sẽ là i is not defind
+      */
+    </script>
+  </body>
+</html>

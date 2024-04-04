@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Hàm hợp nhất các đối tượng thành một đối tượng duy nhất
+
+      let obj1 = { a: 1, b: 2 };
+      let obj2 = { b: 3, c: 4 };
+      let obj3 = { c: 5, d: 6 };
+
+      let mergeObjects = (...objects) => {
+        return objects.reduce((accumulator, obj) => {
+          return { ...accumulator, ...obj };
+        }, {});
+      };
+
+      let mergedObject = mergeObjects(obj1, obj2, obj3);
+      console.log(mergedObject);
+    </script>
+  </body>
+</html>
